@@ -1,0 +1,16 @@
+{
+  "name": "gamepalshub",
+  "version": "1.0.0",
+  "description": "Gamepalshub - Social Gaming Paradise",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build.js",
+    "start": "serve dist"
+  },
+  "dependencies": {
+    "fs-extra": "^10.0.0"
+  },
+  "devDependencies": {
+    "serve": "^14.0.0"
+  }
+}

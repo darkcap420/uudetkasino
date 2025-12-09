@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamepalshub | Social Gaming Paradise</title>
+    <meta name="description" content="Experience the ultimate social gaming platform with Gamepalshub. Play, connect, and enjoy with friends.">
+    <link rel="icon" href="../images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="/" class="logo">
+                <img src="./images/logo.webp" alt="Gamepalshub Logo" class="logo__img">
+            </a>
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#games" class="nav__link">Games</a></li>
+                    <li class="nav__item"><a href="#features" class="nav__link">Features</a></li>
+                    <li class="nav__item"><a href="#responsible" class="nav__link">Responsible Gaming</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+            <a href="#games" class="btn btn--primary">Play Now</a>
+            <div class="nav__toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="particles" id="particles-js"></div>
+        <div class="container">
+            <div class="hero__content" data-aos="fade-up">
+                <h1 class="hero__title">🎮 Welcome to Gamepalshub — Where Gaming Meets Fun!</h1>
+                <p class="hero__subtitle">Step into a social gaming world filled with entertainment, community, and creativity. No risk, just endless excitement.</p>
+                <a href="#games" class="btn btn--gradient">
+                    <span>Explore Games</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section class="section games" id="games">
+        <div class="container">
+            <div class="section__header" data-aos="fade-up">
+                <h2 class="section__title">🎮 Top Social Games</h2>
+                <p class="section__subtitle">Discover our collection of exciting games</p>
+            </div>
+            <div class="games__grid">
+                <!-- Game cards will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Modal -->
+    <div class="modal" id="gameModal">
+        <div class="modal__content">
+            <span class="modal__close">&times;</span>
+            <div class="game__container">
+                <iframe id="gameFrame" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about__grid">
+                <div class="about__content" data-aos="fade-right">
+                    <h2 class="section__title">About Gamepalshub</h2>
+                    <p>At Gamepalshub, we redefine entertainment with a social twist. Our platform connects players through engaging, interactive, and safe gaming experiences — all powered by pure fun, not fortune.</p>
+                    <div class="about__stats">
+                        <div class="stat">
+                            <span class="stat__number">8+</span>
+                            <span class="stat__label">Games</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number">100%</span>
+                            <span class="stat__label">Free to Play</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number">24/7</span>
+                            <span class="stat__label">Support</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__image" data-aos="fade-left">
+                    <div class="floating-cards">
+                        <div class="floating-card" style="--i:1;">
+                            <img src="./images/about-img.png" alt="Gaming Community">
+                        </div>
+                        <div class="floating-card" style="--i:2;">
+                            <img src="./images/about-img.png" alt="Gaming Rewards">
+                        </div>
+                        <div class="floating-card" style="--i:3;">
+                            <img src="./images/about-img.png" alt="Gaming Events">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section features" id="features">
+        <div class="container">
+            <div class="section__header" data-aos="fade-up">
+                <h2 class="section__title">🌟 Why Choose Gamepalshub?</h2>
+                <p class="section__subtitle">Experience gaming like never before</p>
+            </div>
+            <div class="features__grid">
+                <div class="feature" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature__icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="feature__title">Instant Play</h3>
+                    <p class="feature__text">No downloads, no waiting. Just click and start playing your favorite games instantly.</p>
+                </div>
+                <div class="feature" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature__icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="feature__title">Vibrant Community</h3>
+                    <p class="feature__text">Connect with friends, join clubs, and compete in social challenges.</p>
+                </div>
+                <div class="feature" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature__icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3 class="feature__title">Tournaments</h3>
+                    <p class="feature__text">Compete in daily and weekly tournaments to win amazing prizes.</p>
+                </div>
+                <div class="feature" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature__icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="feature__title">Global Access</h3>
+                    <p class="feature__text">Play anytime, anywhere, on any device. Your games are always with you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Responsible Gaming -->
+    <section class="section responsible" id="responsible">
+        <div class="container">
+            <div class="responsible__content" data-aos="fade-up">
+                <div class="responsible__image">
+                    <img src="./images/responsible-gaming-img.png" alt="Responsible Gaming">
+                </div>
+                <div class="responsible__text">
+                    <h2 class="section__title">Stay in Control. <span>Play Smart.</span></h2>
+                    <p>At Gamepalshub, we're committed to responsible gaming. We believe gaming should always be fun and entertaining. Here are some tips to keep it that way:</p>
+                    <ul class="responsible__list">
+                        <li><i class="fas fa-check"></i> Set time limits for your gaming sessions</li>
+                        <li><i class="fas fa-check"></i> Take regular breaks</li>
+                        <li><i class="fas fa-check"></i> Don't chase losses</li>
+                        <li><i class="fas fa-check"></i> Balance gaming with other activities</li>
+                    </ul>
+                    <p>Remember, gaming is about having fun. If you need help managing your gaming habits, please reach out to support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section__header" data-aos="fade-up">
+                <h2 class="section__title">📬 Get In Touch</h2>
+                <p class="section__subtitle">We'd love to hear from you</p>
+            </div>
+            <div class="contact__grid">
+                <form class="contact__form" data-aos="fade-right">
+                    <div class="form__group">
+                        <input type="text" class="form__input" placeholder="Your Name" required>
+                    </div>
+                    <div class="form__group">
+                        <input type="email" class="form__input" placeholder="Your Email" required>
+                    </div>
+                    <div class="form__group">
+                        <textarea class="form__input form__textarea" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--gradient">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+                <div class="contact__info" data-aos="fade-left">
+                    <div class="contact__item">
+                        <div class="contact__icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact__details">
+                            <h3>Email Us</h3>
+                            <p>support@sc1-gaming.com</p>
+                        </div>
+                    </div>
+                    <div class="contact__item">
+                        <div class="contact__icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact__details">
+                            <h3>Call Us</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact__item">
+                        <div class="contact__icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact__details">
+                            <h3>Visit Us</h3>
+                            <p>123 Gaming Street, Virtual World</p>
+                        </div>
+                    </div>
+                    <div class="contact__social">
+                        <a href="#" class="social__link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social__link"><i class="fab fa-discord"></i></a>
+                        <a href="#" class="social__link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social__link"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disclaimer Section -->
+    <section class="section disclaimer" style="background: linear-gradient(135deg, rgba(250, 250, 252, 0.9) 0%, rgba(240, 242, 255, 0.9) 100%); position: relative; overflow: hidden;">
+        <div class="container">
+            <div class="disclaimer__content" data-aos="fade-up" style="position: relative; z-index: 2;">
+                <div class="section__header text-center mb-5">
+                    <span class="section__subtitle" style="color: #6c63ff; font-weight: 600; letter-spacing: 1px; margin-bottom: 10px; display: block;">LEGAL INFORMATION</span>
+                    <h2 class="section__title" style="font-size: 2.5rem; margin-bottom: 1.5rem; position: relative; display: inline-block;"> <span style="color: #6c63ff;">Disclaimer</span>
+                        <span style="content: ''; position: absolute; bottom: -10px; left: 0; width: 60px; height: 3px; background: #6c63ff; border-radius: 3px;"></span>
+                    </h2>
+                </div>
+                
+                <div class="disclaimer__card" style="background: white; border-radius: 15px; padding: 2.5rem; box-shadow: 0 10px 30px rgba(108, 99, 255, 0.08); position: relative; overflow: hidden;">
+                    <div class="disclaimer__icon" style="position: absolute; top: 20px; right: 20px; opacity: 0.1; transform: rotate(15deg);">
+                        <i class="fas fa-shield-alt" style="font-size: 6rem; color: #6c63ff;"></i>
+                    </div>
+                    
+                    <div class="disclaimer__text" style="position: relative; z-index: 2;">
+                        <p style="font-size: 1.1rem; line-height: 1.7; color: #4a4a6a; margin-bottom: 1.5rem; font-weight: 400;">
+                            Gamepalshub is a social gaming platform designed exclusively for entertainment purposes. Please review the following important information carefully.
+                        </p>
+                        
+                        <div class="disclaimer__grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+                            <div class="disclaimer__item" style="background: #f8f9ff; padding: 1.5rem; border-radius: 10px; border-left: 3px solid #6c63ff;">
+                                <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                                    <div class="disclaimer__icon" style="background: rgba(108, 99, 255, 0.1); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                        <i class="fas fa-gamepad" style="color: #6c63ff; font-size: 1rem;"></i>
+                                    </div>
+                                    <p style="margin: 0; color: #4a4a6a; line-height: 1.6;">All games are for entertainment only with no real money gambling or cash prizes.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="disclaimer__item" style="background: #f8f9ff; padding: 1.5rem; border-radius: 10px; border-left: 3px solid #6c63ff;">
+                                <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                                    <div class="disclaimer__icon" style="background: rgba(108, 99, 255, 0.1); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                        <i class="fas fa-birthday-cake" style="color: #6c63ff; font-size: 1rem;"></i>
+                                    </div>
+                                    <p style="margin: 0; color: #4a4a6a; line-height: 1.6;">You must be 18+ to use our platform. By continuing, you confirm you meet this requirement.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="disclaimer__item" style="background: #f8f9ff; padding: 1.5rem; border-radius: 10px; border-left: 3px solid #6c63ff;">
+                                <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                                    <div class="disclaimer__icon" style="background: rgba(108, 99, 255, 0.1); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                        <i class="fas fa-shield-alt" style="color: #6c63ff; font-size: 1rem;"></i>
+                                    </div>
+                                    <p style="margin: 0; color: #4a4a6a; line-height: 1.6;">Virtual currency has no real-world value and cannot be exchanged for cash.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="disclaimer__footer" style="background: #f8f9ff; padding: 1.5rem; border-radius: 10px; text-align: center; margin-top: 2rem;">
+                            <p style="margin: 0; color: #6c63ff; font-weight: 500; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+                                <i class="fas fa-exclamation-circle"></i>
+                                By using Gamepalshub, you agree to our 
+                                <a href="/terms-conditions.html" style="color: #6c63ff; text-decoration: underline; font-weight: 600; margin: 0 5px;">Terms of Service</a> 
+                                and 
+                                <a href="/privacy-policy.html" style="color: #6c63ff; text-decoration: underline; font-weight: 600; margin-left: 5px;">Privacy Policy</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Decorative Elements -->
+        <div style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: rgba(108, 99, 255, 0.05); border-radius: 50%; z-index: 1;"></div>
+        <div style="position: absolute; bottom: -100px; left: -50px; width: 300px; height: 300px; background: rgba(108, 99, 255, 0.03); border-radius: 50%; z-index: 1;"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="#" class="logo">Gamepalshub</a>
+                    <p class="footer__slogan">Play. Connect. Enjoy.</p>
+                    <p class="footer__text">Your ultimate social gaming destination for fun and excitement.</p>
+                </div>
+                <div class="footer__links">
+                    <h3 class="footer__title">Quick Links</h3>
+                    <ul>
+                        <li><a href="#home" class="footer__link">Home</a></li>
+                        <li><a href="#about" class="footer__link">About Us</a></li>
+                        <li><a href="#games" class="footer__link">Games</a></li>
+                        <li><a href="#features" class="footer__link">Features</a></li>
+                        <li><a href="#responsible" class="footer__link">Responsible Gaming</a></li>
+                        <li><a href="#contact" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__legal">
+                    <h3 class="footer__title">Legal</h3>
+                    <ul>
+                        <li><a href="/terms-conditions.html" class="footer__link">Terms of Service</a></li>
+                        <li><a href="/privacy-policy.html" class="footer__link">Privacy Policy</a></li>
+                        <li><a href="/cookie-policy.html" class="footer__link">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer__newsletter">
+                    <h3 class="footer__title">Newsletter</h3>
+                    <p>Subscribe to get the latest updates and game releases.</p>
+                    <form class="newsletter__form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2025 Gamepalshub. All Rights Reserved.</p>
+                <div class="footer__social">
+                    <a href="#" class="social__link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social__link"><i class="fab fa-discord"></i></a>
+                    <a href="#" class="social__link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social__link"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Age Verification Modal -->
+    <div class="age-verification" id="ageVerification">
+        <div class="age-verification__content">
+            <div class="age-verification__header">
+                <h2>Age Verification Required</h2>
+            </div>
+            <div class="age-verification__body">
+                <img src="../images/age-18+.png" alt="18+ Age Verification" class="age-verification__image">
+                <p>You must be 18 years or older to access this website. By entering, you confirm you are of legal age.</p>
+                <div class="age-verification__buttons">
+                    <button class="btn btn--primary" id="confirmAge">I am 18 or older</button>
+                    <button class="btn btn--secondary" id="denyAge">I am under 18</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
